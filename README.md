@@ -1,37 +1,62 @@
-## Welcome to GitHub Pages
+# share-space-gatsby
 
-You can use the [editor on GitHub](https://github.com/CarsonGwo/CKBolg.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+share space built with Gatsby
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+基于Gatsby框架编写的个人博客系统，使用markdown编写文章，数据源经插件处理交由GraphQL在React中获取。
 
-### Markdown
+⚠️注意: 未做兼容性处理，建议使用较新版本的Chrome 或 Safari
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## 使用方法🔧
 
-```markdown
-Syntax highlighted code block
+### 运行步骤
+1. git clone
+2. npm install
+3. npm run start
+4. http://localhost:8000
 
-# Header 1
-## Header 2
-### Header 3
+### 可配置项
+1. gatsby-config.js
+   - title
+   - description
+   - author
+   - socialMedia
+     - Instagram
+     - Twitter
+     - Weibo
+2. /static/CNAME 自定义域名
+3. /src/posts/  markdown格式进行写作，可配置的字段如下
+   1. title: 文章标题
+   2. titleImage: 展示在blog页面的文章封面
+   3. date: 日期(格式: YYYY-MM-DD)
+4. /src/assets/background-image.jpg index页面的背景图
 
-- Bulleted
-- List
+## Feature💡
 
-1. Numbered
-2. List
+1. 响应式, 适配移动端
+2. 暗黑模式(跟随系统)
+3. 令人愉悦的UI
+4. 可配置选项
 
-**Bold** and _Italic_ and `Code` text
+## TODO✅(优先级不分先后)
+- [ ] PWA支持
+- [ ] SEO
+- [ ] 更加友好的无障碍体验
+- [ ] 文章封面图在文章详情页的标题处显示
+- [ ] 新建MarkDown文件时自动添加title, titleImage & date字段
+- [ ] 可自定义的about页
+- [ ] 更多的socialmedia选项
+- [ ] 暗黑模式开关
+- [ ] 加入更多文章列表页的卡片好看的背景色
+- [ ] GraphQL多数据源
+- [ ] 文章列表lazy load(如果有需要的话)
+- [ ] 跳页动画
+- [ ] 上/下一篇按钮
+- [ ] 回到顶部按钮
+- [ ] 更加优雅的UI&UE
+- [ ] 微博, 微信, Twitter分享文章
 
-[Link](url) and ![Image](src)
-```
+## 版本说明📒
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### 2020-08-08 v1.0.0
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CarsonGwo/CKBolg.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- 正式公开上线🎉
